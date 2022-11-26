@@ -52,7 +52,7 @@
             bindings = <
  &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &kp LA(F4)
     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6      &kp HOME        &kp EQUAL     &kp MINUS        &trans      &kp SEMI  &kp SINGLE_QUOTE
-    &kp F7        &kp F8        &kp F9       &kp F10       &kp F11       &kp F12       &kp END  &kp RIGHT_SHIFT        &trans        &trans        &trans            &trans
+    &kp F7        &kp F8        &kp F9       &kp F10       &kp F11       &kp F12       &kp END  &kp RIGHT_SHIFT     &kp COMMA       &kp DOT        &trans            &trans
                                             &kp LGUI        &trans     &kp SPACE       &kp RET           &trans      &kp RALT
             >;
         };
