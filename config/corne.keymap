@@ -125,18 +125,18 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &kp LA(F4)
-    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6         &kp HOME        &kp EQUAL     &kp MINUS        &trans      &kp SEMI  &kp SINGLE_QUOTE
-    &kp F7        &kp F8        &kp F9       &kp F10       &kp F11       &kp F12          &kp END  &kp RIGHT_SHIFT     &kp COMMA       &kp DOT        &trans            &trans
-                                          &kp LA(LC)        &trans  &kp LEFT_ALT  &kp RIGHT_SHIFT           &trans        &trans
+ &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &kp LA(F4)
+    &kp F1        &kp F2        &kp F3         &kp F4        &kp F5        &kp F6         &kp HOME        &kp EQUAL     &kp MINUS        &trans      &kp SEMI  &kp SINGLE_QUOTE
+    &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12          &kp END  &kp RIGHT_SHIFT     &kp COMMA       &kp DOT        &trans            &trans
+                                        &kp LA(LCTRL)        &trans  &kp LEFT_ALT  &kp RIGHT_SHIFT           &trans        &trans
             >;
         };
 
         Layer__3 {
             bindings = <
  &kp KP_NUMLOCK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-   &kp CAPSLOCK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-     &kp INSERT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+   &kp CAPSLOCK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &trans     &trans    &mm0    &mm1    &mm2    &mm3    &mm4    &mm5
+     &kp INSERT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &trans     &trans    &mm6    &mm7    &mm8    &mm9   &mm10   &mm11
                                              &kp NUMBER_0  &kp DOT  &kp RIGHT  &trans  &trans  &trans
             >;
         };
