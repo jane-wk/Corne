@@ -10,23 +10,77 @@
 
 / {
     macros {
-        m0: m0 {
+        mm0: mm0 {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings = <&kp HOME &mt LEFT_SHIFT END>;
+            bindings = <&kp HOME &kp LS(END)>;
         };
-        m1: m1 {
+        mm1: mm1 {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR>;
+            bindings = <&kp LS(NUMBER_9) &kp LS(NUMBER_0)>;
         };
-        m2: m2 {
+        mm2: mm2 {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings = <&kp RBKT &kp RBRC>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
+        };
+        mm3: mm3 {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
+        };
+        mm4: mm4 {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE>;
+        };
+        mm5: mm5 {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SINGLE_QUOTE) &kp LS(SINGLE_QUOTE)>;
+        };
+        mm6: mm6 {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp GT>;
+        };
+        mm7: mm7 {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_7) &kp LS(NUMBER_7)>;
+        };
+        mm8: mm8 {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(BACKSLASH) &kp LS(BACKSLASH)>;
+        };
+        mm9: mm9 {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_1) &kp EQUAL>;
+        };
+        mm10: mm10 {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(SLASH)>;
+        };
+        mm11: mm11 {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp KP_SUBTRACT &kp KP_SUBTRACT &kp SPACE &kp SPACE &kp KP_SUBTRACT &kp KP_SUBTRACT &kp GT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
         };
     };
 
@@ -41,10 +95,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-          &kp ESC   &kp Q   &kp W      &kp E        &kp R   &kp T   &kp Y          &kp U      &kp I    &kp O     &kp P          &kp DEL
- &mt LEFT_ALT TAB   &kp A   &kp S      &kp D        &kp F   &kp G   &kp H          &kp J      &kp K    &kp L  &kp SEMI        &kp ENTER
-        &kp LSHFT   &kp Z   &kp X      &kp C        &kp V   &kp B   &kp N          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                   &kp LCTRL  &lt 2 SPACE   &mo 1   &mo 4  &kp BACKSPACE      &mo 3
+   &kp ESC   &kp Q   &kp W      &kp E        &kp R   &kp T   &kp Y          &kp U      &kp I    &kp O     &kp P          &kp DEL
+   &kp TAB   &kp A   &kp S      &kp D        &kp F   &kp G   &kp H          &kp J      &kp K    &kp L  &kp SEMI        &kp ENTER
+ &kp LSHFT   &kp Z   &kp X      &kp C        &kp V   &kp B   &kp N          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                            &kp LCTRL  &lt 2 SPACE   &mo 1   &mo 4  &kp BACKSPACE      &mo 3
             >;
         };
 
@@ -74,15 +128,15 @@
  &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0        &kp LA(F4)
     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6         &kp HOME        &kp EQUAL     &kp MINUS        &trans      &kp SEMI  &kp SINGLE_QUOTE
     &kp F7        &kp F8        &kp F9       &kp F10       &kp F11       &kp F12          &kp END  &kp RIGHT_SHIFT     &kp COMMA       &kp DOT        &trans            &trans
-                                              &trans        &trans         &mo 1  &kp RIGHT_SHIFT           &trans        &trans
+                                          &kp LA(LC)        &trans  &kp LEFT_ALT  &kp RIGHT_SHIFT           &trans        &trans
             >;
         };
 
         Layer__3 {
             bindings = <
  &kp KP_NUMLOCK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-   &kp CAPSLOCK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &trans     &trans     &m0     &m1     &m2  &trans  &trans  &trans
-     &kp INSERT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+   &kp CAPSLOCK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &trans     &trans    &mm0    &mm1    &mm2    &mm3    &mm4    &mm5
+     &kp INSERT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &trans     &trans    &mm6    &mm7    &mm8    &mm9   &mm10   &mm11
                                              &kp NUMBER_0  &kp DOT  &kp RIGHT  &trans  &trans  &trans
             >;
         };
